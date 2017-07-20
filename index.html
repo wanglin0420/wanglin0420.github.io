@@ -6,29 +6,67 @@
     <title>My test page</title>
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            font-size: 0.8em;
+        }
+
+        header,
+        nav,
+        section,
+        article,
+        footer {
+            border: 1px solid grey;
+            margin: 5px;
+            padding: 8px;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 5px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1> My main title</h1>
-    <h2>My top level heading</h2>
-    <h3>My subheading</h3>
-    <h4>My sub-subheading</h4>
-    <h5>My sub-subheading</h5>
-    <h6>My sub-subheading</h6>
-    <img src="images\firefox-icon.jpg" alt="My test image">
-    <p>At Mozilla, we’re a global community of</p>
-
-    <ul>
-        <li>technologists</li>
-        <li>thinkers</li>
-        <li>builders</li>
-    </ul>
-
-    <p>working together ... </p>
-
-    <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a>
-
-    <button>Change user</button>
+    <header>
+        <h1> 我的标题</h1>
+    </header>
+    <section>
+        <article>
+            <p>下面来一张可以点击切换的图片</p>
+            <img src="images\firefox-icon.jpg" alt="My test image">
+        </article>
+        <article>
+            <p>下面是一个列表</p>
+            <ul>
+                <li>technologists</li>
+                <li>thinkers</li>
+                <li>builders</li>
+            </ul>
+        </article>
+        <article>
+            <a href="https://www.mozilla.org/en-US/about/manifesto/">这是一个超链接</a></article>
+        <article>
+            <p>下面放了一个视频</p>
+            <video width="320" height="240" controls="controls">
+                <source src="/i/movie.ogg" type="video/ogg">
+                <source src="video\big_buck_bunny.mp4" type="video/mp4">
+            </video>
+        </article>
+        <article>
+            <button>点我设置新的标题</button>
+        </article>
+    </section>
+    <footer>
+        <p>© 2014 W3Schools. All rights reserved.</p>
+    </footer>
     <script src="scripts/main.js"></script>
 </body>
 
