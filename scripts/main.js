@@ -20,6 +20,7 @@ var myButton = document.querySelector('button');
 var myHeading = document.querySelector('h1');
 function setUserName() {
   var myName = prompt('输入你的名字.');
+  if(!myName)return
   localStorage.setItem('name', myName);
   myHeading.innerHTML = title + myName;
 }
