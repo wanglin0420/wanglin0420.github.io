@@ -42,7 +42,7 @@
     <section>
         <article>
             <p>下面来一张可以点击切换的图片</p>
-            <img src="images\firefox-icon.jpg" alt="My test image"  style="max-width:100%;">
+            <!-- <img src="images\firefox-icon.jpg" alt="My test image"  style="max-width:100%;"> -->
         </article>
         <article>
             <p>下面是一个列表</p>
@@ -56,10 +56,17 @@
             <a href="https://www.mozilla.org/en-US/about/manifesto/">这是一个超链接</a></article>
         <article>
             <p>下面放了一个视频</p>
-            <video style="max-width:100%;" controls="controls">
+            <video style="max-width:100%;" controls="controls" preload="preload">
                 <source src="/i/movie.ogg" type="video/ogg">
                 <source src="video\big_buck_bunny.mp4" type="video/mp4">
             </video>
+        </article>
+        <article>
+            <p>音乐</p>
+            <audio  controls="controls" preload="preload">
+                <source src="/i/song.ogg" type="audio/ogg">
+                <source src="audio\I_Love_Lady_Gaga.mp3" type="audio/mpeg">
+            </audio>
         </article>
         <article>
             <button>点我设置新的标题</button>

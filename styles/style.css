@@ -3,11 +3,11 @@
 html {
   font-size: 20px; /* px 意为“像素（pixels）”: 这个基础字体的尺寸现在是10像素  */
   font-family: 'Zilla Slab', serif;
-   background-color: #00539F;
+   background-color: #ffffff;
 }
 body {
   margin: 0 auto;
-  background-color: #FF9500;
+  background-color: #ffffff;
   padding: 0 20px 20px 20px;
  
 }
